@@ -1,5 +1,27 @@
 # Azure client-side cross-region DNS failover POC
 
+## Start here: what are we testing?
+
+**If an East US VM's first DNS path cannot answer, will the VM automatically ask
+its backup DNS server in West US?** We tested that question on Windows Server
+and Ubuntu. We also checked whether removing East hub network peering breaks
+resolution through a linked DNS forwarding ruleset.
+
+Read [the plain-language scenario guide](./SCENARIOS.md) first. It explains each
+component, the normal DNS path, exactly where each fault is applied, what remains
+working, the resulting lookup path, the measurements, and the limits of each
+conclusion. No prior knowledge of this lab is assumed.
+
+| Test case | What changes | What we check |
+|---|---|---|
+| [TC-01: primary DNS timeout](./SCENARIOS.md#tc-01-the-workload-cannot-get-a-response-from-primary-azure-dns) | Workload firewall blocks DNS to the Azure primary | Whether the OS queries West, lookup delay, and failed queries |
+| [TC-02: unsuccessful East forwarding](./SCENARIOS.md#tc-02-azure-dns-is-reachable-but-its-east-forwarding-path-cannot-answer) | Azure DNS stays reachable; its East upstream path drops traffic or returns SERVFAIL | Whether the client uses West, and whether timeout or a failure response precedes the switch |
+| [TC-03: East hub peering removed](./SCENARIOS.md#tc-03-remove-the-east-workload-to-hub-network-peering) | Remove the workload/East-hub network connection but retain the ruleset link | Whether native lookups still resolve through East without using the backup |
+
+The [results table](./RESULTS.md#requested-test-cases-and-results) records the
+expected and actual result for each case. These are scoped fault-injection
+experiments, **not** a complete Azure region outage or an application recovery test.
+
 ## Scope
 
 This is a disposable, chargeable Azure lab, not a production DNS architecture.

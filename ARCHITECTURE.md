@@ -2,10 +2,15 @@
 
 ![Regional architecture map](./architecture.svg)
 
+For a first-time reader, start with [the plain-language scenario guide](./SCENARIOS.md).
+It explains the normal lookup, each fault's exact location, the resulting path,
+and the observed outcome separately for TC-01, TC-02 and TC-03. This document is
+the more detailed reference for addresses, component relationships and sequences.
+
 ## 1. Deployment map
 
-Subscription: `00000000-0000-0000-0000-000000000000`  
-Resource group: `rg-dns-crossregion-failover-poc`
+Subscription: selected by the person deploying; the original account ID is redacted.  
+Default resource group: `rg-dns-crossregion-failover-poc`, overridable at deployment.
 
 ```mermaid
 flowchart TB
