@@ -1,0 +1,44 @@
+[
+
+  {
+
+    "vnet": "dnspoc-east-spoke",
+
+    "name": "to-west",
+
+    "state": "Connected"
+
+  },
+
+  {
+
+    "vnet": "dnspoc-east-spoke",
+
+    "name": "to-east",
+
+    "state": "Connected"
+
+  },
+
+  {
+
+    "vnet": "dnspoc-east-hub",
+
+    "name": "to-spoke",
+
+    "state": "Connected"
+
+  },
+
+  {
+
+    "vnet": "dnspoc-west-hub",
+
+    "name": "to-spoke",
+
+    "state": "Connected"
+
+  }
+
+]
+

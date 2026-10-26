@@ -1,0 +1,19 @@
+{
+
+  "value": [
+
+    {
+
+      "code": "ProvisioningState/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": "Enable succeeded: \n[stdout]\n{\"phase\": \"fast-servfail-control\", \"evidence\": \"/var/lib/dns-lab/fast-servfail-control\", \"complete\": true}\nDNSLAB_OK\n\n[stderr]\n"
+
+    }
+
+  ]
+
+}

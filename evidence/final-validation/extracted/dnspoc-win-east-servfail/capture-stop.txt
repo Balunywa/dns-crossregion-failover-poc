@@ -1,0 +1,6 @@
+Flushing logs...
+
+Merging metadata...
+
+Log file: C:\dnslab\east-servfail\dns.etl (No events lost)
+

@@ -1,0 +1,31 @@
+{
+
+  "value": [
+
+    {
+
+      "code": "ComponentStatus/StdOut/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": "{\"phase\":\"fast-servfail-control\",\"evidence\":\"C:\\\\dnslab\\\\fast-servfail-control\",\"complete\":true}\nDNSLAB_OK"
+
+    },
+
+    {
+
+      "code": "ComponentStatus/StdErr/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": ""
+
+    }
+
+  ]
+
+}

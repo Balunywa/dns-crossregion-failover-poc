@@ -1,0 +1,6 @@
+Flushing logs...
+
+Merging metadata...
+
+Log file: C:\dnslab\fast-servfail-control\dns.etl (No events lost)
+

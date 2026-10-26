@@ -1,0 +1,6 @@
+Flushing logs...
+
+Merging metadata...
+
+Log file: C:\dnslab\east-outbound-drop\dns.etl (No events lost)
+

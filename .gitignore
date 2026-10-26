@@ -1,0 +1,14 @@
+__pycache__/
+
+*.py[cod]
+
+deployment-outputs.json
+
+.env
+
+.env.*
+
+/evidence/*
+
+!/evidence/final-validation/
+

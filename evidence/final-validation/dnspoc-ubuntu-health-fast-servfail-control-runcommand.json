@@ -1,0 +1,19 @@
+{
+
+  "value": [
+
+    {
+
+      "code": "ProvisioningState/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": "Enable succeeded: \n[stdout]\nProbe transport completed\n2026-10-26T14:05:47Z health-1793023547194986087.lab.failover.test 192.0.2.10\nProbe transport completed\n2026-10-26T14:05:52Z health-1793023552229719357.lab.failover.test 192.0.2.10\nDNSLAB_OK\n\n[stderr]\n"
+
+    }
+
+  ]
+
+}

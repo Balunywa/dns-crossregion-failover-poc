@@ -1,0 +1,31 @@
+{
+
+  "value": [
+
+    {
+
+      "code": "ComponentStatus/StdOut/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": "{\"phase\":\"no-east-peering\",\"evidence\":\"C:\\\\dnslab\\\\no-east-peering\",\"complete\":true}\nDNSLAB_OK"
+
+    },
+
+    {
+
+      "code": "ComponentStatus/StdErr/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": ""
+
+    }
+
+  ]
+
+}

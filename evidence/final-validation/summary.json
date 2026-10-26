@@ -1,0 +1,5313 @@
+{
+  "measurement": "Native client API elapsed time; DNS wire sends/replies are separately decoded. No application retries.",
+  "captureCaveat": "Wire counts include any capture duplicates; blocked packets may not reach NIC capture. TCP segments are not reassembled; decode errors are explicit.",
+  "results": [
+    {
+      "clientPhase": "dnspoc-ubuntu-baseline",
+      "phase": "baseline",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.10": 15
+      },
+      "latencyP50Ms": 9.08,
+      "latencyP95Ms": 19.417,
+      "latencyMaxMs": 19.417,
+      "firstWestCallIndex": null,
+      "firstWestCallElapsedMs": null,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 15,
+      "westWireRequests": 0,
+      "primaryServfailResponses": 0,
+      "wireRcodes": {
+        "0": 30
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-0-3c698d5db7.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 0,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:05.141991+00:00",
+          "elapsedMs": 13.195,
+          "utc": "2026-10-26T14:03:05.155225+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-1-2b73679a1f.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 1,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:05.655682+00:00",
+          "elapsedMs": 14.194,
+          "utc": "2026-10-26T14:03:05.669914+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-2-26c3611b86.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 2,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:06.170285+00:00",
+          "elapsedMs": 9.027,
+          "utc": "2026-10-26T14:03:06.179347+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-3-5cac4b6439.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 3,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:06.679758+00:00",
+          "elapsedMs": 7.913,
+          "utc": "2026-10-26T14:03:06.687706+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-4-bc113256c1.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 4,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:07.188154+00:00",
+          "elapsedMs": 9.74,
+          "utc": "2026-10-26T14:03:07.197926+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-5-5b5e6d3c51.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 5,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:07.698276+00:00",
+          "elapsedMs": 19.417,
+          "utc": "2026-10-26T14:03:07.717730+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-6-e7e280d269.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 6,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:08.218126+00:00",
+          "elapsedMs": 9.08,
+          "utc": "2026-10-26T14:03:08.227241+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-7-1abeb3cc8c.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 7,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:08.727647+00:00",
+          "elapsedMs": 11.011,
+          "utc": "2026-10-26T14:03:08.738713+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-8-03e844827a.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 8,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:09.239340+00:00",
+          "elapsedMs": 7.953,
+          "utc": "2026-10-26T14:03:09.247327+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-9-6897c53d84.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 9,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:09.747690+00:00",
+          "elapsedMs": 8.983,
+          "utc": "2026-10-26T14:03:09.756708+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-10-442fb68dec.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 10,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:10.257145+00:00",
+          "elapsedMs": 9.599,
+          "utc": "2026-10-26T14:03:10.266778+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-11-f77e7fa9b2.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 11,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:10.767240+00:00",
+          "elapsedMs": 7.529,
+          "utc": "2026-10-26T14:03:10.774805+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-12-cddfe94cbe.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 12,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:11.275185+00:00",
+          "elapsedMs": 7.878,
+          "utc": "2026-10-26T14:03:11.283096+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-13-9f9c609f2e.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 13,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:11.783454+00:00",
+          "elapsedMs": 7.96,
+          "utc": "2026-10-26T14:03:11.791448+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "baseline-healthy-14-050122ddfc.lab.failover.test",
+          "phase": "baseline",
+          "stage": "healthy",
+          "index": 14,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:03:12.291774+00:00",
+          "elapsedMs": 9.306,
+          "utc": "2026-10-26T14:03:12.301114+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "168.63.129.16",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @168.63.129.16 diag-2fcb5b356b.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 56851\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: cb734e84253af096 (echoed)\n;; QUESTION SECTION:\n;diag-2fcb5b356b.lab.failover.test. IN\tA\n\n;; ANSWER SECTION:\ndiag-2fcb5b356b.lab.failover.test. 0 IN\tA\t192.0.2.10\n\n;; Query time: 16 msec\n;; SERVER: 168.63.129.16#53(168.63.129.16) (UDP)\n;; WHEN: Mon Oct 26 14:03:12 UTC 2026\n;; MSG SIZE  rcvd: 90\n\n",
+          "utc": "2026-10-26T14:03:12.839402+00:00"
+        },
+        {
+          "kind": "direct",
+          "server": "10.30.0.4",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @10.30.0.4 diag-3fa98f1fe5.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 53733\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: b54f184506cf9167 (echoed)\n;; QUESTION SECTION:\n;diag-3fa98f1fe5.lab.failover.test. IN\tA\n\n;; ANSWER SECTION:\ndiag-3fa98f1fe5.lab.failover.test. 0 IN\tA\t192.0.2.20\n\n;; Query time: 76 msec\n;; SERVER: 10.30.0.4#53(10.30.0.4) (UDP)\n;; WHEN: Mon Oct 26 14:03:12 UTC 2026\n;; MSG SIZE  rcvd: 90\n\n",
+          "utc": "2026-10-26T14:03:12.937035+00:00"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-ubuntu-east-outbound-drop",
+      "phase": "east-outbound-drop",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.20": 15
+      },
+      "latencyP50Ms": 73.612,
+      "latencyP95Ms": 5079.454,
+      "latencyMaxMs": 5079.454,
+      "firstWestCallIndex": 0,
+      "firstWestCallElapsedMs": 5079.454,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 1,
+      "westWireRequests": 15,
+      "primaryServfailResponses": 1,
+      "wireRcodes": {
+        "0": 30,
+        "2": 1
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-0-9646cb4c11.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 0,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:11:54.383835+00:00",
+          "elapsedMs": 5079.454,
+          "utc": "2026-10-26T14:11:59.463355+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": 5004.214,
+          "nativeStartToWestRequestMs": 5006.623,
+          "nativeStartToWestAnswerMs": 5079.14,
+          "nativeStartToPrimaryServfailMs": 7886.873,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-1-5de1b3adfa.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 1,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:11:59.963788+00:00",
+          "elapsedMs": 72.434,
+          "utc": "2026-10-26T14:12:00.036260+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.456,
+          "nativeStartToWestAnswerMs": 72.136,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-2-8bcbcd72bf.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 2,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:00.536670+00:00",
+          "elapsedMs": 79.345,
+          "utc": "2026-10-26T14:12:00.616050+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.444,
+          "nativeStartToWestAnswerMs": 78.975,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-3-0c2ff9c20c.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 3,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:01.116404+00:00",
+          "elapsedMs": 73.396,
+          "utc": "2026-10-26T14:12:01.189831+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.492,
+          "nativeStartToWestAnswerMs": 73.056,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-4-37bc152e18.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 4,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:01.690196+00:00",
+          "elapsedMs": 72.356,
+          "utc": "2026-10-26T14:12:01.762588+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.389,
+          "nativeStartToWestAnswerMs": 72.001,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-5-c060a3c1c5.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 5,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:02.263021+00:00",
+          "elapsedMs": 73.195,
+          "utc": "2026-10-26T14:12:02.336252+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.389,
+          "nativeStartToWestAnswerMs": 72.91,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-6-846458376a.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 6,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:02.836614+00:00",
+          "elapsedMs": 73.204,
+          "utc": "2026-10-26T14:12:02.909890+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.356,
+          "nativeStartToWestAnswerMs": 72.87,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-7-0156797947.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 7,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:03.410386+00:00",
+          "elapsedMs": 73.612,
+          "utc": "2026-10-26T14:12:03.484031+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.373,
+          "nativeStartToWestAnswerMs": 73.263,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-8-05d47efd3f.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 8,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:03.984400+00:00",
+          "elapsedMs": 73.568,
+          "utc": "2026-10-26T14:12:04.058001+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.384,
+          "nativeStartToWestAnswerMs": 73.228,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-9-49706f0ee5.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 9,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:04.558405+00:00",
+          "elapsedMs": 72.254,
+          "utc": "2026-10-26T14:12:04.630693+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.39,
+          "nativeStartToWestAnswerMs": 71.961,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-10-f05ad5f4f1.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 10,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:05.131130+00:00",
+          "elapsedMs": 79.096,
+          "utc": "2026-10-26T14:12:05.210263+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.389,
+          "nativeStartToWestAnswerMs": 78.728,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-11-a17b987462.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 11,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:05.710647+00:00",
+          "elapsedMs": 74.283,
+          "utc": "2026-10-26T14:12:05.784965+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.377,
+          "nativeStartToWestAnswerMs": 73.8,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-12-e8fa8ff4f1.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 12,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:06.285321+00:00",
+          "elapsedMs": 81.267,
+          "utc": "2026-10-26T14:12:06.366624+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.385,
+          "nativeStartToWestAnswerMs": 80.938,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-13-402f57d5f4.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 13,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:06.866985+00:00",
+          "elapsedMs": 74.869,
+          "utc": "2026-10-26T14:12:06.941892+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.388,
+          "nativeStartToWestAnswerMs": 74.462,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-outbound-drop-fault-14-e4acef1214.lab.failover.test",
+          "phase": "east-outbound-drop",
+          "stage": "fault",
+          "index": 14,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:12:07.442307+00:00",
+          "elapsedMs": 77.229,
+          "utc": "2026-10-26T14:12:07.519571+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.384,
+          "nativeStartToWestAnswerMs": 76.885,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "168.63.129.16",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @168.63.129.16 diag-dff7f6d1ca.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 5038\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: d8a3cda5642d32b6 (echoed)\n;; QUESTION SECTION:\n;diag-dff7f6d1ca.lab.failover.test. IN\tA\n\n;; Query time: 8083 msec\n;; SERVER: 168.63.129.16#53(168.63.129.16) (UDP)\n;; WHEN: Mon Oct 26 14:12:16 UTC 2026\n;; MSG SIZE  rcvd: 74\n\n",
+          "utc": "2026-10-26T14:12:16.125403+00:00"
+        },
+        {
+          "kind": "direct",
+          "server": "10.30.0.4",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @10.30.0.4 diag-605e229ebb.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 1875\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: 296a584915dc3d52 (echoed)\n;; QUESTION SECTION:\n;diag-605e229ebb.lab.failover.test. IN\tA\n\n;; ANSWER SECTION:\ndiag-605e229ebb.lab.failover.test. 0 IN\tA\t192.0.2.20\n\n;; Query time: 73 msec\n;; SERVER: 10.30.0.4#53(10.30.0.4) (UDP)\n;; WHEN: Mon Oct 26 14:12:16 UTC 2026\n;; MSG SIZE  rcvd: 90\n\n",
+          "utc": "2026-10-26T14:12:16.219809+00:00"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-ubuntu-east-servfail",
+      "phase": "east-servfail",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.20": 15
+      },
+      "latencyP50Ms": 73.816,
+      "latencyP95Ms": 5075.387,
+      "latencyMaxMs": 5075.387,
+      "firstWestCallIndex": 0,
+      "firstWestCallElapsedMs": 5075.387,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 1,
+      "westWireRequests": 15,
+      "primaryServfailResponses": 1,
+      "wireRcodes": {
+        "0": 30,
+        "2": 1
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-0-ff4c9ec2a1.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 0,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:13.512575+00:00",
+          "elapsedMs": 5075.387,
+          "utc": "2026-10-26T14:09:18.588007+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": 5002.51,
+          "nativeStartToWestRequestMs": 5004.891,
+          "nativeStartToWestAnswerMs": 5074.982,
+          "nativeStartToPrimaryServfailMs": 6013.385,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-1-ae5241bfd3.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 1,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:19.088381+00:00",
+          "elapsedMs": 69.249,
+          "utc": "2026-10-26T14:09:19.157665+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.377,
+          "nativeStartToWestAnswerMs": 68.941,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-2-2e4fd72e36.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 2,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:19.658091+00:00",
+          "elapsedMs": 73.558,
+          "utc": "2026-10-26T14:09:19.731686+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.388,
+          "nativeStartToWestAnswerMs": 73.235,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-3-a5fdb9c74f.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 3,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:20.232086+00:00",
+          "elapsedMs": 74.923,
+          "utc": "2026-10-26T14:09:20.307041+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.348,
+          "nativeStartToWestAnswerMs": 74.225,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-4-afb82a5552.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 4,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:20.807362+00:00",
+          "elapsedMs": 73.085,
+          "utc": "2026-10-26T14:09:20.880482+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.36,
+          "nativeStartToWestAnswerMs": 72.773,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-5-e9e00cec1a.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 5,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:21.380838+00:00",
+          "elapsedMs": 75.167,
+          "utc": "2026-10-26T14:09:21.456065+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.525,
+          "nativeStartToWestAnswerMs": 74.854,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-6-7e627ff227.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 6,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:21.956477+00:00",
+          "elapsedMs": 78.857,
+          "utc": "2026-10-26T14:09:22.035369+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.441,
+          "nativeStartToWestAnswerMs": 78.444,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-7-8fabb3aa0a.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 7,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:22.535739+00:00",
+          "elapsedMs": 74.452,
+          "utc": "2026-10-26T14:09:22.610227+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.408,
+          "nativeStartToWestAnswerMs": 74.057,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-8-9666586ae8.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 8,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:23.110658+00:00",
+          "elapsedMs": 96.665,
+          "utc": "2026-10-26T14:09:23.207360+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.411,
+          "nativeStartToWestAnswerMs": 96.356,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-9-0aaa5b3273.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 9,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:23.707761+00:00",
+          "elapsedMs": 88.104,
+          "utc": "2026-10-26T14:09:23.795913+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.693,
+          "nativeStartToWestAnswerMs": 87.757,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-10-0b51ed2b65.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 10,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:24.296338+00:00",
+          "elapsedMs": 70.375,
+          "utc": "2026-10-26T14:09:24.366751+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.397,
+          "nativeStartToWestAnswerMs": 70.043,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-11-f53a51590a.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 11,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:24.867145+00:00",
+          "elapsedMs": 73.816,
+          "utc": "2026-10-26T14:09:24.940997+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.384,
+          "nativeStartToWestAnswerMs": 73.03,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-12-f69b43b8db.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 12,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:25.441342+00:00",
+          "elapsedMs": 73.069,
+          "utc": "2026-10-26T14:09:25.514446+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.348,
+          "nativeStartToWestAnswerMs": 72.77,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-13-4ace21a56e.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 13,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:26.014837+00:00",
+          "elapsedMs": 71.51,
+          "utc": "2026-10-26T14:09:26.086414+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.408,
+          "nativeStartToWestAnswerMs": 71.268,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "east-servfail-fault-14-d863132578.lab.failover.test",
+          "phase": "east-servfail",
+          "stage": "fault",
+          "index": 14,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:09:26.586743+00:00",
+          "elapsedMs": 69.284,
+          "utc": "2026-10-26T14:09:26.656086+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.374,
+          "nativeStartToWestAnswerMs": 69.001,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "168.63.129.16",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @168.63.129.16 diag-b4bccba135.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 63813\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: 598c9e68322509a0 (echoed)\n;; QUESTION SECTION:\n;diag-b4bccba135.lab.failover.test. IN\tA\n\n;; Query time: 5498 msec\n;; SERVER: 168.63.129.16#53(168.63.129.16) (UDP)\n;; WHEN: Mon Oct 26 14:09:32 UTC 2026\n;; MSG SIZE  rcvd: 74\n\n",
+          "utc": "2026-10-26T14:09:32.675634+00:00"
+        },
+        {
+          "kind": "direct",
+          "server": "10.30.0.4",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @10.30.0.4 diag-2301fbc5fa.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 48535\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: 3d39cee3604508cf (echoed)\n;; QUESTION SECTION:\n;diag-2301fbc5fa.lab.failover.test. IN\tA\n\n;; ANSWER SECTION:\ndiag-2301fbc5fa.lab.failover.test. 0 IN\tA\t192.0.2.20\n\n;; Query time: 80 msec\n;; SERVER: 10.30.0.4#53(10.30.0.4) (UDP)\n;; WHEN: Mon Oct 26 14:09:32 UTC 2026\n;; MSG SIZE  rcvd: 90\n\n",
+          "utc": "2026-10-26T14:09:32.776440+00:00"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-ubuntu-fast-servfail-control",
+      "phase": "fast-servfail-control",
+      "primaryAddress": "10.10.2.4",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.20": 15
+      },
+      "latencyP50Ms": 75.66,
+      "latencyP95Ms": 86.251,
+      "latencyMaxMs": 86.251,
+      "firstWestCallIndex": 0,
+      "firstWestCallElapsedMs": 86.251,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 1,
+      "primaryWireRequests": 3,
+      "westWireRequests": 15,
+      "primaryServfailResponses": 3,
+      "wireRcodes": {
+        "2": 3,
+        "0": 30
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-0-7656649fd9.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 0,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:50.726864+00:00",
+          "elapsedMs": 86.251,
+          "utc": "2026-10-26T14:06:50.813156+00:00",
+          "wirePrimaryRequests": 3,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": 9.992,
+          "nativeStartToWestRequestMs": 12.099,
+          "nativeStartToWestAnswerMs": 85.899,
+          "nativeStartToPrimaryServfailMs": 7.122,
+          "servfailBeforeWestRequest": true
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-1-c4dad9b1f1.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 1,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:51.313626+00:00",
+          "elapsedMs": 80.122,
+          "utc": "2026-10-26T14:06:51.393787+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.412,
+          "nativeStartToWestAnswerMs": 79.822,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-2-f7abb3079b.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 2,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:51.894255+00:00",
+          "elapsedMs": 72.675,
+          "utc": "2026-10-26T14:06:51.966978+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.543,
+          "nativeStartToWestAnswerMs": 72.375,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-3-d7c161f9ed.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 3,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:52.467447+00:00",
+          "elapsedMs": 73.87,
+          "utc": "2026-10-26T14:06:52.541355+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.392,
+          "nativeStartToWestAnswerMs": 73.515,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-4-8cbddaf635.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 4,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:53.041697+00:00",
+          "elapsedMs": 69.303,
+          "utc": "2026-10-26T14:06:53.111036+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.379,
+          "nativeStartToWestAnswerMs": 68.965,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-5-30dee9dc06.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 5,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:53.611418+00:00",
+          "elapsedMs": 76.654,
+          "utc": "2026-10-26T14:06:53.688108+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.403,
+          "nativeStartToWestAnswerMs": 76.292,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-6-0d15f76675.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 6,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:54.188493+00:00",
+          "elapsedMs": 70.465,
+          "utc": "2026-10-26T14:06:54.258994+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.411,
+          "nativeStartToWestAnswerMs": 70.101,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-7-ba03e41b9e.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 7,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:54.759440+00:00",
+          "elapsedMs": 76.365,
+          "utc": "2026-10-26T14:06:54.835885+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.662,
+          "nativeStartToWestAnswerMs": 75.952,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-8-9711b20b3a.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 8,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:55.336333+00:00",
+          "elapsedMs": 71.133,
+          "utc": "2026-10-26T14:06:55.407535+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.426,
+          "nativeStartToWestAnswerMs": 70.464,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-9-706f1a50ef.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 9,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:55.908045+00:00",
+          "elapsedMs": 78.164,
+          "utc": "2026-10-26T14:06:55.986258+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.78,
+          "nativeStartToWestAnswerMs": 77.884,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-10-6a0513e502.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 10,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:56.486668+00:00",
+          "elapsedMs": 75.66,
+          "utc": "2026-10-26T14:06:56.562363+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.46,
+          "nativeStartToWestAnswerMs": 75.347,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-11-5ebb9c021c.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 11,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:57.062730+00:00",
+          "elapsedMs": 70.067,
+          "utc": "2026-10-26T14:06:57.132835+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.377,
+          "nativeStartToWestAnswerMs": 69.661,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-12-8fc733c2cb.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 12,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:57.633221+00:00",
+          "elapsedMs": 76.474,
+          "utc": "2026-10-26T14:06:57.709732+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.378,
+          "nativeStartToWestAnswerMs": 76.111,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-13-ff29bf74c0.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 13,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:58.210161+00:00",
+          "elapsedMs": 71.001,
+          "utc": "2026-10-26T14:06:58.281198+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.381,
+          "nativeStartToWestAnswerMs": 70.679,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "fast-servfail-control-fault-14-e88d8788c1.lab.failover.test",
+          "phase": "fast-servfail-control",
+          "stage": "fault",
+          "index": 14,
+          "primary": "10.10.2.4",
+          "startedUtc": "2026-10-26T14:06:58.781579+00:00",
+          "elapsedMs": 82.852,
+          "utc": "2026-10-26T14:06:58.864465+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.407,
+          "nativeStartToWestAnswerMs": 82.519,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "10.10.2.4",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @10.10.2.4 diag-18249a00c6.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 7003\n;; flags: qr aa rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0\n\n;; QUESTION SECTION:\n;diag-18249a00c6.lab.failover.test. IN\tA\n\n;; Query time: 3 msec\n;; SERVER: 10.10.2.4#53(10.10.2.4) (UDP)\n;; WHEN: Mon Oct 26 14:06:59 UTC 2026\n;; MSG SIZE  rcvd: 51\n\n",
+          "utc": "2026-10-26T14:06:59.390229+00:00"
+        },
+        {
+          "kind": "direct",
+          "server": "10.30.0.4",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @10.30.0.4 diag-adaff84bd3.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 2486\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: f7e2fa50c0b193d2 (echoed)\n;; QUESTION SECTION:\n;diag-adaff84bd3.lab.failover.test. IN\tA\n\n;; ANSWER SECTION:\ndiag-adaff84bd3.lab.failover.test. 0 IN\tA\t192.0.2.20\n\n;; Query time: 72 msec\n;; SERVER: 10.30.0.4#53(10.30.0.4) (UDP)\n;; WHEN: Mon Oct 26 14:06:59 UTC 2026\n;; MSG SIZE  rcvd: 90\n\n",
+          "utc": "2026-10-26T14:06:59.484633+00:00"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-ubuntu-no-east-peering",
+      "phase": "no-east-peering",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.10": 15
+      },
+      "latencyP50Ms": 9.915,
+      "latencyP95Ms": 14.312,
+      "latencyMaxMs": 14.312,
+      "firstWestCallIndex": null,
+      "firstWestCallElapsedMs": null,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 15,
+      "westWireRequests": 0,
+      "primaryServfailResponses": 0,
+      "wireRcodes": {
+        "0": 30
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-0-c59d74dd69.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 0,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:47.281278+00:00",
+          "elapsedMs": 11.223,
+          "utc": "2026-10-26T14:14:47.292538+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-1-efe1780a46.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 1,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:47.792905+00:00",
+          "elapsedMs": 10.34,
+          "utc": "2026-10-26T14:14:47.803279+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-2-0a456092c0.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 2,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:48.303708+00:00",
+          "elapsedMs": 8.776,
+          "utc": "2026-10-26T14:14:48.312518+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-3-6b9631d723.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 3,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:48.812945+00:00",
+          "elapsedMs": 10.678,
+          "utc": "2026-10-26T14:14:48.823657+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-4-040ac4ab7d.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 4,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:49.324044+00:00",
+          "elapsedMs": 11.131,
+          "utc": "2026-10-26T14:14:49.335209+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-5-9f68543f75.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 5,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:49.835564+00:00",
+          "elapsedMs": 9.143,
+          "utc": "2026-10-26T14:14:49.844750+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-6-962d94a244.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 6,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:50.345276+00:00",
+          "elapsedMs": 10.032,
+          "utc": "2026-10-26T14:14:50.355348+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-7-7f767d32f4.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 7,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:50.855772+00:00",
+          "elapsedMs": 14.312,
+          "utc": "2026-10-26T14:14:50.870130+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-8-16a31a8554.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 8,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:51.370463+00:00",
+          "elapsedMs": 9.344,
+          "utc": "2026-10-26T14:14:51.379867+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-9-060ca039cd.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 9,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:51.880227+00:00",
+          "elapsedMs": 9.124,
+          "utc": "2026-10-26T14:14:51.889385+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-10-8d879449d8.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 10,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:52.389785+00:00",
+          "elapsedMs": 9.511,
+          "utc": "2026-10-26T14:14:52.399331+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-11-63743d49bd.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 11,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:52.899838+00:00",
+          "elapsedMs": 9.769,
+          "utc": "2026-10-26T14:14:52.909708+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-12-1ad15eee10.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 12,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:53.410082+00:00",
+          "elapsedMs": 9.369,
+          "utc": "2026-10-26T14:14:53.419482+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-13-b51fa1c61d.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 13,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:53.919871+00:00",
+          "elapsedMs": 9.915,
+          "utc": "2026-10-26T14:14:53.929821+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "no-east-peering-fault-14-90a2fd17f2.lab.failover.test",
+          "phase": "no-east-peering",
+          "stage": "fault",
+          "index": 14,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:14:54.430227+00:00",
+          "elapsedMs": 13.822,
+          "utc": "2026-10-26T14:14:54.444084+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "168.63.129.16",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @168.63.129.16 diag-19fe1e8b5a.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43267\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: 38f196d9aca6fcab (echoed)\n;; QUESTION SECTION:\n;diag-19fe1e8b5a.lab.failover.test. IN\tA\n\n;; ANSWER SECTION:\ndiag-19fe1e8b5a.lab.failover.test. 0 IN\tA\t192.0.2.10\n\n;; Query time: 9 msec\n;; SERVER: 168.63.129.16#53(168.63.129.16) (UDP)\n;; WHEN: Mon Oct 26 14:14:54 UTC 2026\n;; MSG SIZE  rcvd: 90\n\n",
+          "utc": "2026-10-26T14:14:54.975944+00:00"
+        },
+        {
+          "kind": "direct",
+          "server": "10.30.0.4",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @10.30.0.4 diag-ac40f8e3aa.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20635\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: 9fcc1214ee8e35b5 (echoed)\n;; QUESTION SECTION:\n;diag-ac40f8e3aa.lab.failover.test. IN\tA\n\n;; ANSWER SECTION:\ndiag-ac40f8e3aa.lab.failover.test. 0 IN\tA\t192.0.2.20\n\n;; Query time: 79 msec\n;; SERVER: 10.30.0.4#53(10.30.0.4) (UDP)\n;; WHEN: Mon Oct 26 14:14:55 UTC 2026\n;; MSG SIZE  rcvd: 90\n\n",
+          "utc": "2026-10-26T14:14:55.076421+00:00"
+        },
+        {
+          "kind": "direct",
+          "server": "10.10.0.4",
+          "exitCode": 9,
+          "output": ";; communications error to 10.10.0.4#53: timed out\n\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @10.10.0.4 diag-5e5981a533.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; no servers could be reached\n",
+          "utc": "2026-10-26T14:15:07.109228+00:00"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-ubuntu-primary-timeout",
+      "phase": "primary-timeout",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.20": 15
+      },
+      "latencyP50Ms": 74.385,
+      "latencyP95Ms": 10082.363,
+      "latencyMaxMs": 10082.363,
+      "firstWestCallIndex": 0,
+      "firstWestCallElapsedMs": 10082.363,
+      "guestFaultToFirstWestCompletionMs": 10082.556,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 0,
+      "westWireRequests": 15,
+      "primaryServfailResponses": 0,
+      "wireRcodes": {
+        "0": 31
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-0-15fa2a9b58.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 0,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:41.112753+00:00",
+          "elapsedMs": 10082.363,
+          "utc": "2026-10-26T14:04:51.195138+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 10010.571,
+          "nativeStartToWestAnswerMs": 10081.881,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-1-920c927d51.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 1,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:51.695569+00:00",
+          "elapsedMs": 80.867,
+          "utc": "2026-10-26T14:04:51.776473+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.408,
+          "nativeStartToWestAnswerMs": 80.544,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-2-be1b284946.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 2,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:52.276880+00:00",
+          "elapsedMs": 73.286,
+          "utc": "2026-10-26T14:04:52.350204+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.37,
+          "nativeStartToWestAnswerMs": 72.933,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-3-f7feaab947.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 3,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:52.850588+00:00",
+          "elapsedMs": 73.011,
+          "utc": "2026-10-26T14:04:52.923636+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.411,
+          "nativeStartToWestAnswerMs": 72.65,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-4-1ad784a975.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 4,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:53.423991+00:00",
+          "elapsedMs": 75.883,
+          "utc": "2026-10-26T14:04:53.499912+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.393,
+          "nativeStartToWestAnswerMs": 75.578,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-5-c527741ba9.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 5,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:54.000374+00:00",
+          "elapsedMs": 75.222,
+          "utc": "2026-10-26T14:04:54.075636+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.413,
+          "nativeStartToWestAnswerMs": 74.76,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-6-9aab155f27.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 6,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:54.576091+00:00",
+          "elapsedMs": 71.394,
+          "utc": "2026-10-26T14:04:54.647521+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.383,
+          "nativeStartToWestAnswerMs": 71.071,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-7-182afce0f9.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 7,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:55.147947+00:00",
+          "elapsedMs": 79.234,
+          "utc": "2026-10-26T14:04:55.227216+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.377,
+          "nativeStartToWestAnswerMs": 78.9,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-8-4e6456bead.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 8,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:55.727659+00:00",
+          "elapsedMs": 72.234,
+          "utc": "2026-10-26T14:04:55.799928+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.414,
+          "nativeStartToWestAnswerMs": 71.884,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-9-1b3c4aefe6.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 9,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:56.300287+00:00",
+          "elapsedMs": 78.973,
+          "utc": "2026-10-26T14:04:56.379295+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.365,
+          "nativeStartToWestAnswerMs": 78.69,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-10-83ea7d0a2c.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 10,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:56.879895+00:00",
+          "elapsedMs": 79.656,
+          "utc": "2026-10-26T14:04:56.959603+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.658,
+          "nativeStartToWestAnswerMs": 79.368,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-11-4e7685d52c.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 11,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:57.459977+00:00",
+          "elapsedMs": 74.385,
+          "utc": "2026-10-26T14:04:57.534402+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.354,
+          "nativeStartToWestAnswerMs": 74.056,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-12-bbc57ecf0c.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 12,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:58.034747+00:00",
+          "elapsedMs": 72.008,
+          "utc": "2026-10-26T14:04:58.106792+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.419,
+          "nativeStartToWestAnswerMs": 71.61,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-13-5ecfa19c99.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 13,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:58.607249+00:00",
+          "elapsedMs": 71.138,
+          "utc": "2026-10-26T14:04:58.678435+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.435,
+          "nativeStartToWestAnswerMs": 70.807,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.20"
+          ],
+          "kind": "native",
+          "name": "primary-timeout-fault-14-90e0b5d979.lab.failover.test",
+          "phase": "primary-timeout",
+          "stage": "fault",
+          "index": 14,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:04:59.178797+00:00",
+          "elapsedMs": 70.869,
+          "utc": "2026-10-26T14:04:59.249703+00:00",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 0.389,
+          "nativeStartToWestAnswerMs": 70.423,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "168.63.129.16",
+          "exitCode": 9,
+          "output": ";; communications error to 168.63.129.16#53: timed out\n\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @168.63.129.16 diag-352f3ed27d.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; no servers could be reached\n",
+          "utc": "2026-10-26T14:05:11.781417+00:00"
+        },
+        {
+          "kind": "direct",
+          "server": "10.30.0.4",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @10.30.0.4 diag-f533f09ff4.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: a01db976f65d7eed (echoed)\n;; QUESTION SECTION:\n;diag-f533f09ff4.lab.failover.test. IN\tA\n\n;; ANSWER SECTION:\ndiag-f533f09ff4.lab.failover.test. 0 IN\tA\t192.0.2.20\n\n;; Query time: 70 msec\n;; SERVER: 10.30.0.4#53(10.30.0.4) (UDP)\n;; WHEN: Mon Oct 26 14:05:11 UTC 2026\n;; MSG SIZE  rcvd: 90\n\n",
+          "utc": "2026-10-26T14:05:11.875757+00:00"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-ubuntu-recovery",
+      "phase": "recovery",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.10": 15
+      },
+      "latencyP50Ms": 9.681,
+      "latencyP95Ms": 19.294,
+      "latencyMaxMs": 19.294,
+      "firstWestCallIndex": null,
+      "firstWestCallElapsedMs": null,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 15,
+      "westWireRequests": 0,
+      "primaryServfailResponses": 0,
+      "wireRcodes": {
+        "0": 30
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-0-6f755da255.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 0,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:45.779540+00:00",
+          "elapsedMs": 11.88,
+          "utc": "2026-10-26T14:16:45.791461+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-1-f4ce07db49.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 1,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:46.291809+00:00",
+          "elapsedMs": 9.493,
+          "utc": "2026-10-26T14:16:46.301337+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-2-90ad3cf8db.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 2,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:46.801685+00:00",
+          "elapsedMs": 12.111,
+          "utc": "2026-10-26T14:16:46.813831+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-3-8e6f6a6d57.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 3,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:47.314191+00:00",
+          "elapsedMs": 9.536,
+          "utc": "2026-10-26T14:16:47.323763+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-4-337f81efd2.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 4,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:47.824154+00:00",
+          "elapsedMs": 8.3,
+          "utc": "2026-10-26T14:16:47.832491+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-5-8b14b8595f.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 5,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:48.332837+00:00",
+          "elapsedMs": 9.681,
+          "utc": "2026-10-26T14:16:48.342580+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-6-3fb65acab5.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 6,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:48.843021+00:00",
+          "elapsedMs": 8.258,
+          "utc": "2026-10-26T14:16:48.851323+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-7-bab34a9ffc.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 7,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:49.351671+00:00",
+          "elapsedMs": 9.1,
+          "utc": "2026-10-26T14:16:49.360804+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-8-b731c1e2a8.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 8,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:49.861166+00:00",
+          "elapsedMs": 9.112,
+          "utc": "2026-10-26T14:16:49.870318+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-9-8459a9db80.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 9,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:50.370698+00:00",
+          "elapsedMs": 6.732,
+          "utc": "2026-10-26T14:16:50.377463+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-10-c0958b8742.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 10,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:50.877797+00:00",
+          "elapsedMs": 19.294,
+          "utc": "2026-10-26T14:16:50.897126+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-11-66d7259a97.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 11,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:51.397632+00:00",
+          "elapsedMs": 13.143,
+          "utc": "2026-10-26T14:16:51.410822+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-12-0b8f4cb551.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 12,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:51.911197+00:00",
+          "elapsedMs": 16.235,
+          "utc": "2026-10-26T14:16:51.927465+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-13-c778d5dca6.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 13,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:52.427838+00:00",
+          "elapsedMs": 14.094,
+          "utc": "2026-10-26T14:16:52.441992+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "success": true,
+          "answers": [
+            "192.0.2.10"
+          ],
+          "kind": "native",
+          "name": "recovery-healthy-14-401770c402.lab.failover.test",
+          "phase": "recovery",
+          "stage": "healthy",
+          "index": 14,
+          "primary": "168.63.129.16",
+          "startedUtc": "2026-10-26T14:16:52.942328+00:00",
+          "elapsedMs": 12.645,
+          "utc": "2026-10-26T14:16:52.955011+00:00",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "168.63.129.16",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @168.63.129.16 diag-c8b4335cd8.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 59331\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: 1b6ad320afab755d (echoed)\n;; QUESTION SECTION:\n;diag-c8b4335cd8.lab.failover.test. IN\tA\n\n;; ANSWER SECTION:\ndiag-c8b4335cd8.lab.failover.test. 0 IN\tA\t192.0.2.10\n\n;; Query time: 8 msec\n;; SERVER: 168.63.129.16#53(168.63.129.16) (UDP)\n;; WHEN: Mon Oct 26 14:16:53 UTC 2026\n;; MSG SIZE  rcvd: 90\n\n",
+          "utc": "2026-10-26T14:16:53.486048+00:00"
+        },
+        {
+          "kind": "direct",
+          "server": "10.30.0.4",
+          "exitCode": 0,
+          "output": "\n; <<>> DiG 9.18.39-0ubuntu0.24.04.8-Ubuntu <<>> @10.30.0.4 diag-0a2fcbeb9c.lab.failover.test A +tries=1 +time=12\n; (1 server found)\n;; global options: +cmd\n;; Got answer:\n;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 27623\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version: 0, flags:; udp: 1224\n; COOKIE: d0027054f986756a (echoed)\n;; QUESTION SECTION:\n;diag-0a2fcbeb9c.lab.failover.test. IN\tA\n\n;; ANSWER SECTION:\ndiag-0a2fcbeb9c.lab.failover.test. 0 IN\tA\t192.0.2.20\n\n;; Query time: 70 msec\n;; SERVER: 10.30.0.4#53(10.30.0.4) (UDP)\n;; WHEN: Mon Oct 26 14:16:53 UTC 2026\n;; MSG SIZE  rcvd: 90\n\n",
+          "utc": "2026-10-26T14:16:53.578430+00:00"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-win-baseline",
+      "phase": "baseline",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.10": 15
+      },
+      "latencyP50Ms": 10.5996,
+      "latencyP95Ms": 54.462300000000006,
+      "latencyMaxMs": 54.462300000000006,
+      "firstWestCallIndex": null,
+      "firstWestCallElapsedMs": null,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 15,
+      "westWireRequests": 0,
+      "primaryServfailResponses": 0,
+      "wireRcodes": {
+        "0": 15
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:12.4918858Z",
+          "elapsedMs": 54.462300000000006,
+          "index": 0,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-0-e8d125afac.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:12.4137617Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:13.0231728Z",
+          "elapsedMs": 10.2446,
+          "index": 1,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-1-acf53af904.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:13.0231728Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:13.5543866Z",
+          "elapsedMs": 22.7392,
+          "index": 2,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-2-85a841bae4.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:13.5387627Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:14.0543939Z",
+          "elapsedMs": 8.1631,
+          "index": 3,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-3-1ba1955356.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:14.0543939Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:14.5700517Z",
+          "elapsedMs": 10.679,
+          "index": 4,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-4-4fc660bf6c.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:14.5700517Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:15.0856753Z",
+          "elapsedMs": 10.8163,
+          "index": 5,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-5-070ea11029.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:15.0856753Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:15.5856862Z",
+          "elapsedMs": 10.542300000000001,
+          "index": 6,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-6-e98a68d4c8.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:15.5856862Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:16.1012672Z",
+          "elapsedMs": 10.8896,
+          "index": 7,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-7-c901bd3e65.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:16.1012672Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:16.6169782Z",
+          "elapsedMs": 17.3403,
+          "index": 8,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-8-151a19e226.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:16.6012758Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:17.1325581Z",
+          "elapsedMs": 10.5996,
+          "index": 9,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-9-fa8d26f387.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:17.1325581Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:17.6481442Z",
+          "elapsedMs": 8.350100000000001,
+          "index": 10,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-10-a91b374f64.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:17.6481442Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:18.1481453Z",
+          "elapsedMs": 8.1374,
+          "index": 11,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-11-f708aaf7f0.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:18.1481453Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:18.6482017Z",
+          "elapsedMs": 10.5469,
+          "index": 12,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-12-56789e14e8.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:18.6482017Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:19.1637694Z",
+          "elapsedMs": 7.9584,
+          "index": 13,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-13-55f59c67dc.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:19.1637694Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:03:19.6637832Z",
+          "elapsedMs": 13.3483,
+          "index": 14,
+          "primary": "168.63.129.16",
+          "name": "baseline-healthy-14-5a852d0a65.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "baseline",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:03:19.6637832Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "records": [
+            {
+              "Name": "diag-f7a4965704.lab.failover.test",
+              "Type": 1,
+              "IPAddress": "192.0.2.10"
+            }
+          ],
+          "server": "168.63.129.16",
+          "utc": "2026-10-26T14:03:20.2262713Z",
+          "success": true,
+          "kind": "direct"
+        },
+        {
+          "records": [
+            {
+              "Name": "diag-de19c8bf9e.lab.failover.test",
+              "Type": 1,
+              "IPAddress": "192.0.2.20"
+            }
+          ],
+          "server": "10.30.0.4",
+          "utc": "2026-10-26T14:03:20.3200231Z",
+          "success": true,
+          "kind": "direct"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-win-east-outbound-drop",
+      "phase": "east-outbound-drop",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.20": 15
+      },
+      "latencyP50Ms": 72.13510000000001,
+      "latencyP95Ms": 1105.0045,
+      "latencyMaxMs": 1105.0045,
+      "firstWestCallIndex": 0,
+      "firstWestCallElapsedMs": 1105.0045,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 1,
+      "westWireRequests": 15,
+      "primaryServfailResponses": 1,
+      "wireRcodes": {
+        "0": 15,
+        "2": 1
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:15.7215108Z",
+          "elapsedMs": 1105.0045,
+          "index": 0,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-0-b791fafe66.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:14.5955529Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": 998.436,
+          "nativeStartToWestRequestMs": 1032.471,
+          "nativeStartToWestAnswerMs": 1109.164,
+          "nativeStartToPrimaryServfailMs": 8551.028,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:16.3309228Z",
+          "elapsedMs": 82.321,
+          "index": 1,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-1-f90e49fab2.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:16.2528237Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 4.832,
+          "nativeStartToWestAnswerMs": 81.99,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:16.8934318Z",
+          "elapsedMs": 69.7123,
+          "index": 2,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-2-82b709b80d.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:16.8309276Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.386,
+          "nativeStartToWestAnswerMs": 69.494,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:17.4560974Z",
+          "elapsedMs": 73.3627,
+          "index": 3,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-3-80425e8710.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:17.3936097Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.308,
+          "nativeStartToWestAnswerMs": 73.118,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:18.0185928Z",
+          "elapsedMs": 73.4417,
+          "index": 4,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-4-7c8594e254.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:17.9561113Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.226,
+          "nativeStartToWestAnswerMs": 73.048,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:18.5811054Z",
+          "elapsedMs": 69.6177,
+          "index": 5,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-5-2974ad2567.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:18.5186065Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.284,
+          "nativeStartToWestAnswerMs": 69.057,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:19.1592317Z",
+          "elapsedMs": 70.3777,
+          "index": 6,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-6-e6fa5994c4.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:19.0967658Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.295,
+          "nativeStartToWestAnswerMs": 70.178,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:19.7373466Z",
+          "elapsedMs": 72.9256,
+          "index": 7,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-7-0dee678159.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:19.6748650Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.174,
+          "nativeStartToWestAnswerMs": 72.558,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:20.3155000Z",
+          "elapsedMs": 71.53960000000001,
+          "index": 8,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-8-b1f77407fb.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:20.2529742Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.24,
+          "nativeStartToWestAnswerMs": 71.168,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:20.8938413Z",
+          "elapsedMs": 88.6311,
+          "index": 9,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-9-3005f8112c.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:20.8157498Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.342,
+          "nativeStartToWestAnswerMs": 88.393,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:21.4573788Z",
+          "elapsedMs": 73.0162,
+          "index": 10,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-10-6580b918af.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:21.3948958Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.184,
+          "nativeStartToWestAnswerMs": 71.776,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:22.0430733Z",
+          "elapsedMs": 71.8417,
+          "index": 11,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-11-a5f4e23447.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:21.9716367Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.608,
+          "nativeStartToWestAnswerMs": 71.471,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:22.6249402Z",
+          "elapsedMs": 71.52550000000001,
+          "index": 12,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-12-58fc1ae956.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:22.5538477Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.278,
+          "nativeStartToWestAnswerMs": 71.121,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:23.1931914Z",
+          "elapsedMs": 72.0472,
+          "index": 13,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-13-8002bea1f0.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:23.1306670Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.122,
+          "nativeStartToWestAnswerMs": 71.658,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:12:23.7791603Z",
+          "elapsedMs": 72.13510000000001,
+          "index": 14,
+          "primary": "168.63.129.16",
+          "name": "east-outbound-drop-fault-14-f296e16923.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-outbound-drop",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:12:23.7072775Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.376,
+          "nativeStartToWestAnswerMs": 71.777,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "168.63.129.16",
+          "utc": "2026-10-26T14:12:31.3352520Z",
+          "errorCode": 1460,
+          "success": false,
+          "error": "diag-0fc01360c8.lab.failover.test : This operation returned because the timeout period expired"
+        },
+        {
+          "records": [
+            {
+              "Name": "diag-80bee57e6b.lab.failover.test",
+              "Type": 1,
+              "IPAddress": "192.0.2.20"
+            }
+          ],
+          "server": "10.30.0.4",
+          "utc": "2026-10-26T14:12:31.4143238Z",
+          "success": true,
+          "kind": "direct"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-win-east-servfail",
+      "phase": "east-servfail",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.20": 15
+      },
+      "latencyP50Ms": 75.0745,
+      "latencyP95Ms": 1109.319,
+      "latencyMaxMs": 1109.319,
+      "firstWestCallIndex": 0,
+      "firstWestCallElapsedMs": 1109.319,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 1,
+      "westWireRequests": 15,
+      "primaryServfailResponses": 1,
+      "wireRcodes": {
+        "0": 15,
+        "2": 1
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:30.4716147Z",
+          "elapsedMs": 1109.319,
+          "index": 0,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-0-af26ffc0fa.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:29.3436720Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": 1002.117,
+          "nativeStartToWestRequestMs": 1033.935,
+          "nativeStartToWestAnswerMs": 1110.212,
+          "nativeStartToPrimaryServfailMs": 5378.467,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:31.0653721Z",
+          "elapsedMs": 75.8789,
+          "index": 1,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-1-bb2866a372.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:31.0028590Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.61,
+          "nativeStartToWestAnswerMs": 75.623,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:31.6591328Z",
+          "elapsedMs": 79.2191,
+          "index": 2,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-2-36408e72cb.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:31.5809823Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 4.338,
+          "nativeStartToWestAnswerMs": 78.675,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:32.2219002Z",
+          "elapsedMs": 75.5211,
+          "index": 3,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-3-b418e10901.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:32.1594062Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.329,
+          "nativeStartToWestAnswerMs": 75.183,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:32.8001285Z",
+          "elapsedMs": 74.7736,
+          "index": 4,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-4-f3922012cf.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:32.7375605Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.295,
+          "nativeStartToWestAnswerMs": 74.421,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:33.3626812Z",
+          "elapsedMs": 75.07390000000001,
+          "index": 5,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-5-9226a433eb.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:33.3001415Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.26,
+          "nativeStartToWestAnswerMs": 74.681,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:33.9408224Z",
+          "elapsedMs": 75.0051,
+          "index": 6,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-6-5c23833f4c.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:33.8782974Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.115,
+          "nativeStartToWestAnswerMs": 74.502,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:34.5189251Z",
+          "elapsedMs": 75.0745,
+          "index": 7,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-7-e384091f22.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:34.4564289Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.616,
+          "nativeStartToWestAnswerMs": 74.886,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:35.0970327Z",
+          "elapsedMs": 74.042,
+          "index": 8,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-8-d50aeae848.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:35.0345700Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.31,
+          "nativeStartToWestAnswerMs": 73.814,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:35.6597087Z",
+          "elapsedMs": 75.1406,
+          "index": 9,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-9-0d6d938aeb.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:35.5971789Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.208,
+          "nativeStartToWestAnswerMs": 74.609,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:36.2222622Z",
+          "elapsedMs": 74.6029,
+          "index": 10,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-10-c05fce778d.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:36.1597180Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.228,
+          "nativeStartToWestAnswerMs": 74.185,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:36.7999040Z",
+          "elapsedMs": 74.8674,
+          "index": 11,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-11-cc0fbca71b.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:36.7370513Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.106,
+          "nativeStartToWestAnswerMs": 74.274,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:37.4068272Z",
+          "elapsedMs": 85.7211,
+          "index": 12,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-12-c34ff6a065.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:37.3287341Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.247,
+          "nativeStartToWestAnswerMs": 85.412,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:38.0013180Z",
+          "elapsedMs": 80.03750000000001,
+          "index": 13,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-13-f8b0f2c32d.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:37.9217330Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.235,
+          "nativeStartToWestAnswerMs": 79.647,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:09:38.5663953Z",
+          "elapsedMs": 74.4349,
+          "index": 14,
+          "primary": "168.63.129.16",
+          "name": "east-servfail-fault-14-83126395a5.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "east-servfail",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:09:38.5038290Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.384,
+          "nativeStartToWestAnswerMs": 74.082,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "168.63.129.16",
+          "utc": "2026-10-26T14:09:44.5663505Z",
+          "errorCode": 9002,
+          "success": false,
+          "error": "diag-8161f578e6.lab.failover.test : DNS server failure"
+        },
+        {
+          "records": [
+            {
+              "Name": "diag-48d12b3367.lab.failover.test",
+              "Type": 1,
+              "IPAddress": "192.0.2.20"
+            }
+          ],
+          "server": "10.30.0.4",
+          "utc": "2026-10-26T14:09:44.6545525Z",
+          "success": true,
+          "kind": "direct"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-win-fast-servfail-control",
+      "phase": "fast-servfail-control",
+      "primaryAddress": "10.10.2.4",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.20": 15
+      },
+      "latencyP50Ms": 72.33930000000001,
+      "latencyP95Ms": 109.8788,
+      "latencyMaxMs": 109.8788,
+      "firstWestCallIndex": 0,
+      "firstWestCallElapsedMs": 109.8788,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 1,
+      "primaryWireRequests": 1,
+      "westWireRequests": 15,
+      "primaryServfailResponses": 1,
+      "wireRcodes": {
+        "2": 1,
+        "0": 15
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:06:58.9078097Z",
+          "elapsedMs": 109.8788,
+          "index": 0,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-0-df59c292b4.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:06:58.7827769Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": 7.624,
+          "nativeStartToWestRequestMs": 42.928,
+          "nativeStartToWestAnswerMs": 115.518,
+          "nativeStartToPrimaryServfailMs": 42.67,
+          "servfailBeforeWestRequest": true
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:06:59.5015289Z",
+          "elapsedMs": 72.3502,
+          "index": 1,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-1-4bdb2a9030.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:06:59.4390708Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.215,
+          "nativeStartToWestAnswerMs": 72.034,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:00.0640322Z",
+          "elapsedMs": 72.1177,
+          "index": 2,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-2-e5f770a219.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:00.0015385Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.293,
+          "nativeStartToWestAnswerMs": 71.796,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:00.6266630Z",
+          "elapsedMs": 72.263,
+          "index": 3,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-3-7f1bffe6c9.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:00.5641803Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.145,
+          "nativeStartToWestAnswerMs": 71.804,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:01.1891320Z",
+          "elapsedMs": 73.20320000000001,
+          "index": 4,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-4-c2a100c44d.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:01.1267147Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.202,
+          "nativeStartToWestAnswerMs": 72.418,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:01.7555482Z",
+          "elapsedMs": 73.9445,
+          "index": 5,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-5-86d81c0d36.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:01.6930160Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.263,
+          "nativeStartToWestAnswerMs": 73.573,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:02.3337509Z",
+          "elapsedMs": 71.8802,
+          "index": 6,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-6-ef238a85f8.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:02.2711757Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.266,
+          "nativeStartToWestAnswerMs": 71.486,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:02.9117898Z",
+          "elapsedMs": 72.33930000000001,
+          "index": 7,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-7-214337c2fc.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:02.8492603Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.334,
+          "nativeStartToWestAnswerMs": 72.125,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:03.4742688Z",
+          "elapsedMs": 72.7861,
+          "index": 8,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-8-5a96218ded.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:03.4117989Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.258,
+          "nativeStartToWestAnswerMs": 72.452,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:04.0523875Z",
+          "elapsedMs": 71.6438,
+          "index": 9,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-9-7370a7159f.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:03.9898880Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.233,
+          "nativeStartToWestAnswerMs": 71.325,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:04.6149272Z",
+          "elapsedMs": 73.3234,
+          "index": 10,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-10-d685178477.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:04.5524435Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.128,
+          "nativeStartToWestAnswerMs": 72.894,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:05.2025415Z",
+          "elapsedMs": 72.3,
+          "index": 11,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-11-239fec725b.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:05.1305500Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.169,
+          "nativeStartToWestAnswerMs": 71.878,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:05.7784205Z",
+          "elapsedMs": 71.9357,
+          "index": 12,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-12-59186dbdda.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:05.7143981Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.163,
+          "nativeStartToWestAnswerMs": 71.443,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:06.3576548Z",
+          "elapsedMs": 73.3412,
+          "index": 13,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-13-c210133273.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:06.2856184Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.384,
+          "nativeStartToWestAnswerMs": 72.06,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:07:06.9298596Z",
+          "elapsedMs": 72.226,
+          "index": 14,
+          "primary": "10.10.2.4",
+          "name": "fast-servfail-control-fault-14-2c9c836d5d.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "fast-servfail-control",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:07:06.8583379Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.179,
+          "nativeStartToWestAnswerMs": 71.543,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "10.10.2.4",
+          "utc": "2026-10-26T14:07:07.4662987Z",
+          "errorCode": 9002,
+          "success": false,
+          "error": "diag-43048bea97.lab.failover.test : DNS server failure"
+        },
+        {
+          "records": [
+            {
+              "Name": "diag-1ec8cceb8f.lab.failover.test",
+              "Type": 1,
+              "IPAddress": "192.0.2.20"
+            }
+          ],
+          "server": "10.30.0.4",
+          "utc": "2026-10-26T14:07:07.5526893Z",
+          "success": true,
+          "kind": "direct"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-win-no-east-peering",
+      "phase": "no-east-peering",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.10": 15
+      },
+      "latencyP50Ms": 9.802200000000001,
+      "latencyP95Ms": 41.7436,
+      "latencyMaxMs": 41.7436,
+      "firstWestCallIndex": null,
+      "firstWestCallElapsedMs": null,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 15,
+      "westWireRequests": 0,
+      "primaryServfailResponses": 0,
+      "wireRcodes": {
+        "0": 15
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:14:59.1275388Z",
+          "elapsedMs": 41.7436,
+          "index": 0,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-0-191d06f008.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:14:59.0806710Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:14:59.6588402Z",
+          "elapsedMs": 9.5896,
+          "index": 1,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-1-ca552c4543.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:14:59.6588402Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:00.1589084Z",
+          "elapsedMs": 11.2322,
+          "index": 2,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-2-db84291e1d.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:00.1589084Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:00.6589724Z",
+          "elapsedMs": 10.081900000000001,
+          "index": 3,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-3-4b3f2e23df.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:00.6589724Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:01.1591239Z",
+          "elapsedMs": 8.9882,
+          "index": 4,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-4-7e36ade26f.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:01.1591239Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:01.6747264Z",
+          "elapsedMs": 8.7806,
+          "index": 5,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-5-30d1e1534d.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:01.6747264Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:02.1747625Z",
+          "elapsedMs": 9.7864,
+          "index": 6,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-6-16313ebed8.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:02.1747625Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:02.6903482Z",
+          "elapsedMs": 15.798900000000001,
+          "index": 7,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-7-d781a8e108.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:02.6748136Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:03.1903533Z",
+          "elapsedMs": 10.0609,
+          "index": 8,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-8-c939cf7118.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:03.1903533Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:03.6904005Z",
+          "elapsedMs": 11.3496,
+          "index": 9,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-9-aa2d33961b.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:03.6904005Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:04.1905224Z",
+          "elapsedMs": 11.296100000000001,
+          "index": 10,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-10-a8588173dd.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:04.1905224Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:04.7060902Z",
+          "elapsedMs": 7.553800000000001,
+          "index": 11,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-11-1f7685cc8b.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:04.7060902Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:05.2062507Z",
+          "elapsedMs": 8.860800000000001,
+          "index": 12,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-12-0c9067ae2f.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:05.2062507Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:05.7063649Z",
+          "elapsedMs": 8.6721,
+          "index": 13,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-13-f6f5a7d8dd.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:05.7063649Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:15:06.2250893Z",
+          "elapsedMs": 9.802200000000001,
+          "index": 14,
+          "primary": "168.63.129.16",
+          "name": "no-east-peering-fault-14-38d648d69f.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "no-east-peering",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:15:06.2157529Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "records": [
+            {
+              "Name": "diag-ec3295c4c8.lab.failover.test",
+              "Type": 1,
+              "IPAddress": "192.0.2.10"
+            }
+          ],
+          "server": "168.63.129.16",
+          "utc": "2026-10-26T14:15:06.7868943Z",
+          "success": true,
+          "kind": "direct"
+        },
+        {
+          "records": [
+            {
+              "Name": "diag-962077762a.lab.failover.test",
+              "Type": 1,
+              "IPAddress": "192.0.2.20"
+            }
+          ],
+          "server": "10.30.0.4",
+          "utc": "2026-10-26T14:15:06.8624137Z",
+          "success": true,
+          "kind": "direct"
+        },
+        {
+          "kind": "direct",
+          "server": "10.10.0.4",
+          "utc": "2026-10-26T14:15:13.9701417Z",
+          "errorCode": 1460,
+          "success": false,
+          "error": "diag-91e82b04fc.lab.failover.test : This operation returned because the timeout period expired"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-win-primary-timeout",
+      "phase": "primary-timeout",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.20": 15
+      },
+      "latencyP50Ms": 70.56660000000001,
+      "latencyP95Ms": 1088.4692,
+      "latencyMaxMs": 1088.4692,
+      "firstWestCallIndex": 0,
+      "firstWestCallElapsedMs": 1088.4692,
+      "guestFaultToFirstWestCompletionMs": 1098.349,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 0,
+      "westWireRequests": 15,
+      "primaryServfailResponses": 0,
+      "wireRcodes": {
+        "0": 15
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:03.0268481Z",
+          "elapsedMs": 1088.4692,
+          "index": 0,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-0-6d6fb76028.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:01.9441218Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1003.723,
+          "nativeStartToWestAnswerMs": 1088.546,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:03.6158798Z",
+          "elapsedMs": 78.1453,
+          "index": 1,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-1-a89f1b4dd4.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:03.5377203Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.53,
+          "nativeStartToWestAnswerMs": 77.705,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:04.1796163Z",
+          "elapsedMs": 70.56660000000001,
+          "index": 2,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-2-712a5ae214.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:04.1170593Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.25,
+          "nativeStartToWestAnswerMs": 70.121,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:04.7630193Z",
+          "elapsedMs": 70.4993,
+          "index": 3,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-3-c25b3889d3.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:04.6927065Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 3.24,
+          "nativeStartToWestAnswerMs": 71.924,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:05.3460495Z",
+          "elapsedMs": 70.4937,
+          "index": 4,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-4-a914c00c71.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:05.2746554Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.393,
+          "nativeStartToWestAnswerMs": 70.233,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:05.9181179Z",
+          "elapsedMs": 69.99300000000001,
+          "index": 5,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-5-01cbb0a30a.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:05.8544019Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.145,
+          "nativeStartToWestAnswerMs": 69.557,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:06.4971991Z",
+          "elapsedMs": 73.4101,
+          "index": 6,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-6-6d9a03a44a.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:06.4295044Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.602,
+          "nativeStartToWestAnswerMs": 70.343,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:07.0691610Z",
+          "elapsedMs": 70.6513,
+          "index": 7,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-7-b56b1e831a.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:07.0001573Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.172,
+          "nativeStartToWestAnswerMs": 70.231,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:07.6441397Z",
+          "elapsedMs": 72.2482,
+          "index": 8,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-8-cc61a7f489.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:07.5722700Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.375,
+          "nativeStartToWestAnswerMs": 71.873,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:08.2146768Z",
+          "elapsedMs": 69.8404,
+          "index": 9,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-9-762b140550.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:08.1463738Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.394,
+          "nativeStartToWestAnswerMs": 69.508,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:08.7904672Z",
+          "elapsedMs": 70.0704,
+          "index": 10,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-10-2c61525803.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:08.7234325Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.169,
+          "nativeStartToWestAnswerMs": 69.691,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:09.3515433Z",
+          "elapsedMs": 71.793,
+          "index": 11,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-11-e0b6319d6a.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:09.2941674Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.016,
+          "nativeStartToWestAnswerMs": 71.055,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:09.9485609Z",
+          "elapsedMs": 69.6288,
+          "index": 12,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-12-51dd8d3185.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:09.8825243Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.158,
+          "nativeStartToWestAnswerMs": 69.255,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:10.5293657Z",
+          "elapsedMs": 69.9072,
+          "index": 13,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-13-1b874124c0.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:10.4619146Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.291,
+          "nativeStartToWestAnswerMs": 69.564,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "fault",
+          "utc": "2026-10-26T14:05:11.0989836Z",
+          "elapsedMs": 71.4659,
+          "index": 14,
+          "primary": "168.63.129.16",
+          "name": "primary-timeout-fault-14-7b87666c9d.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "primary-timeout",
+          "answers": [
+            "192.0.2.20"
+          ],
+          "startedUtc": "2026-10-26T14:05:11.0353785Z",
+          "wirePrimaryRequests": 0,
+          "wireWestRequests": 1,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": 1.327,
+          "nativeStartToWestAnswerMs": 70.952,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "kind": "direct",
+          "server": "168.63.129.16",
+          "utc": "2026-10-26T14:05:18.6563809Z",
+          "errorCode": 1460,
+          "success": false,
+          "error": "diag-8465c02d8f.lab.failover.test : This operation returned because the timeout period expired"
+        },
+        {
+          "records": [
+            {
+              "Name": "diag-4d7d0bfbe9.lab.failover.test",
+              "Type": 1,
+              "IPAddress": "192.0.2.20"
+            }
+          ],
+          "server": "10.30.0.4",
+          "utc": "2026-10-26T14:05:18.7381950Z",
+          "success": true,
+          "kind": "direct"
+        }
+      ]
+    },
+    {
+      "clientPhase": "dnspoc-win-recovery",
+      "phase": "recovery",
+      "primaryAddress": "168.63.129.16",
+      "calls": 15,
+      "successes": 15,
+      "failures": 0,
+      "answers": {
+        "192.0.2.10": 15
+      },
+      "latencyP50Ms": 9.8186,
+      "latencyP95Ms": 47.0664,
+      "latencyMaxMs": 47.0664,
+      "firstWestCallIndex": null,
+      "firstWestCallElapsedMs": null,
+      "guestFaultToFirstWestCompletionMs": null,
+      "callsWithServfailBeforeWestRequest": 0,
+      "primaryWireRequests": 15,
+      "westWireRequests": 0,
+      "primaryServfailResponses": 0,
+      "wireRcodes": {
+        "0": 15
+      },
+      "decodeErrors": 0,
+      "nativeDetails": [
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:16:59.4625435Z",
+          "elapsedMs": 47.0664,
+          "index": 0,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-0-9fcf58a59c.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:16:59.4156687Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:00.0094497Z",
+          "elapsedMs": 22.8292,
+          "index": 1,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-1-2bd40563bd.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:16:59.9938419Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:00.5097455Z",
+          "elapsedMs": 9.1646,
+          "index": 2,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-2-85a6170e8a.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:00.5097455Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:01.0098140Z",
+          "elapsedMs": 9.7789,
+          "index": 3,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-3-567a07fc11.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:01.0098140Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:01.5098169Z",
+          "elapsedMs": 10.1583,
+          "index": 4,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-4-55ecc06d06.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:01.5098169Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:02.0101748Z",
+          "elapsedMs": 9.9451,
+          "index": 5,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-5-5803a3041e.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:02.0101748Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:02.5257993Z",
+          "elapsedMs": 8.690800000000001,
+          "index": 6,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-6-764200742d.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:02.5257993Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:03.0258358Z",
+          "elapsedMs": 8.6584,
+          "index": 7,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-7-d6a59dd5eb.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:03.0258358Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:03.5258487Z",
+          "elapsedMs": 9.6691,
+          "index": 8,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-8-9a330fe159.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:03.5258487Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:04.0260429Z",
+          "elapsedMs": 9.1133,
+          "index": 9,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-9-e97477c7d5.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:04.0260429Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:04.5261509Z",
+          "elapsedMs": 9.8186,
+          "index": 10,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-10-0179101da3.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:04.5261509Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:05.0261599Z",
+          "elapsedMs": 10.0713,
+          "index": 11,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-11-1ce0d696f6.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:05.0261599Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:05.5261630Z",
+          "elapsedMs": 10.426300000000001,
+          "index": 12,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-12-4ebeacc0f0.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:05.5261630Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:06.0417864Z",
+          "elapsedMs": 8.4022,
+          "index": 13,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-13-8ba43df8dc.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:06.0417864Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        },
+        {
+          "stage": "healthy",
+          "utc": "2026-10-26T14:17:06.5629097Z",
+          "elapsedMs": 12.316,
+          "index": 14,
+          "primary": "168.63.129.16",
+          "name": "recovery-healthy-14-407774567d.lab.failover.test",
+          "kind": "native",
+          "success": true,
+          "phase": "recovery",
+          "answers": [
+            "192.0.2.10"
+          ],
+          "startedUtc": "2026-10-26T14:17:06.5507345Z",
+          "wirePrimaryRequests": 1,
+          "wireWestRequests": 0,
+          "wirePrimaryToWestMs": null,
+          "nativeStartToWestRequestMs": null,
+          "nativeStartToWestAnswerMs": null,
+          "nativeStartToPrimaryServfailMs": null,
+          "servfailBeforeWestRequest": false
+        }
+      ],
+      "directDiagnostics": [
+        {
+          "records": [
+            {
+              "Name": "diag-94518e58ba.lab.failover.test",
+              "Type": 1,
+              "IPAddress": "192.0.2.10"
+            }
+          ],
+          "server": "168.63.129.16",
+          "utc": "2026-10-26T14:17:07.1113253Z",
+          "success": true,
+          "kind": "direct"
+        },
+        {
+          "records": [
+            {
+              "Name": "diag-d005c3d2b0.lab.failover.test",
+              "Type": 1,
+              "IPAddress": "192.0.2.20"
+            }
+          ],
+          "server": "10.30.0.4",
+          "utc": "2026-10-26T14:17:07.1945026Z",
+          "success": true,
+          "kind": "direct"
+        }
+      ]
+    }
+  ]
+}

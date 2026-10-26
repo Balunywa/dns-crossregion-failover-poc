@@ -1,0 +1,19 @@
+{
+
+  "value": [
+
+    {
+
+      "code": "ProvisioningState/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": "Enable succeeded: \n[stdout]\nChain INPUT (policy ACCEPT 3561 packets, 1126K bytes)\n pkts bytes target     prot opt in     out     source               destination         \nChain INPUT (policy ACCEPT 3561 packets, 1126K bytes)\n pkts bytes target     prot opt in     out     source               destination         \n    0     0 DROP       6    --  *      *       10.10.1.0/28         0.0.0.0/0            tcp dpt:53 /* dns-lab-outbound-drop */\n    0     0 DROP       17   --  *      *       10.10.1.0/28         0.0.0.0/0            udp dpt:53 /* dns-lab-outbound-drop */\nhealthy\nDNSLAB_OK\n\n[stderr]\nRunning timer as unit: dns-lab-rollback-1793023884.timer\nWill run service as unit: dns-lab-rollback-1793023884.service\n"
+
+    }
+
+  ]
+
+}

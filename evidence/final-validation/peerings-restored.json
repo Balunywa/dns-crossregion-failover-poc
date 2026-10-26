@@ -1,0 +1,127 @@
+[
+
+  {
+
+    "allowForwardedTraffic": false,
+
+    "allowGatewayTransit": false,
+
+    "allowVirtualNetworkAccess": true,
+
+    "doNotVerifyRemoteGateways": false,
+
+    "etag": "W/\"53876448-5a74-4707-ae7e-f2da3962349b\"",
+
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-dns-crossregion-failover-poc/providers/Microsoft.Network/virtualNetworks/dnspoc-east-spoke/virtualNetworkPeerings/to-west",
+
+    "name": "to-west",
+
+    "peerCompleteVnets": true,
+
+    "peeringState": "Connected",
+
+    "peeringSyncLevel": "FullyInSync",
+
+    "provisioningState": "Succeeded",
+
+    "remoteAddressSpace": {
+
+      "addressPrefixes": [
+
+        "10.30.0.0/16"
+
+      ]
+
+    },
+
+    "remoteVirtualNetwork": {
+
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-dns-crossregion-failover-poc/providers/Microsoft.Network/virtualNetworks/dnspoc-west-hub",
+
+      "resourceGroup": "rg-dns-crossregion-failover-poc"
+
+    },
+
+    "remoteVirtualNetworkAddressSpace": {
+
+      "addressPrefixes": [
+
+        "10.30.0.0/16"
+
+      ]
+
+    },
+
+    "resourceGroup": "rg-dns-crossregion-failover-poc",
+
+    "resourceGuid": "25da5801-3fae-0f0c-394c-99642ce58cb4",
+
+    "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+
+    "useRemoteGateways": false
+
+  },
+
+  {
+
+    "allowForwardedTraffic": false,
+
+    "allowGatewayTransit": false,
+
+    "allowVirtualNetworkAccess": true,
+
+    "doNotVerifyRemoteGateways": false,
+
+    "etag": "W/\"53876448-5a74-4707-ae7e-f2da3962349b\"",
+
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-dns-crossregion-failover-poc/providers/Microsoft.Network/virtualNetworks/dnspoc-east-spoke/virtualNetworkPeerings/to-east",
+
+    "name": "to-east",
+
+    "peerCompleteVnets": true,
+
+    "peeringState": "Connected",
+
+    "peeringSyncLevel": "FullyInSync",
+
+    "provisioningState": "Succeeded",
+
+    "remoteAddressSpace": {
+
+      "addressPrefixes": [
+
+        "10.10.0.0/16"
+
+      ]
+
+    },
+
+    "remoteVirtualNetwork": {
+
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-dns-crossregion-failover-poc/providers/Microsoft.Network/virtualNetworks/dnspoc-east-hub",
+
+      "resourceGroup": "rg-dns-crossregion-failover-poc"
+
+    },
+
+    "remoteVirtualNetworkAddressSpace": {
+
+      "addressPrefixes": [
+
+        "10.10.0.0/16"
+
+      ]
+
+    },
+
+    "resourceGroup": "rg-dns-crossregion-failover-poc",
+
+    "resourceGuid": "14d88cab-10ba-00e6-3e82-6ddeac287673",
+
+    "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+
+    "useRemoteGateways": false
+
+  }
+
+]

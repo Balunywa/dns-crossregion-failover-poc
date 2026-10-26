@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "errors": [],
+  "clientPhases": 14,
+  "nativeCalls": 210,
+  "nativeFailures": 0,
+  "note": "A native query failure is a measured outcome, not by itself an evidence-integrity failure."
+}

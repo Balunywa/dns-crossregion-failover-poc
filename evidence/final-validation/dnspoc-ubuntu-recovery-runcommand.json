@@ -1,0 +1,19 @@
+{
+
+  "value": [
+
+    {
+
+      "code": "ProvisioningState/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": "Enable succeeded: \n[stdout]\n{\"phase\": \"recovery\", \"evidence\": \"/var/lib/dns-lab/recovery\", \"complete\": true}\nDNSLAB_OK\n\n[stderr]\n"
+
+    }
+
+  ]
+
+}

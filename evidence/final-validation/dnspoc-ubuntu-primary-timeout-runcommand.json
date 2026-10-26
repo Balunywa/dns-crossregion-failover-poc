@@ -1,0 +1,19 @@
+{
+
+  "value": [
+
+    {
+
+      "code": "ProvisioningState/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": "Enable succeeded: \n[stdout]\n{\"phase\": \"primary-timeout\", \"evidence\": \"/var/lib/dns-lab/primary-timeout\", \"complete\": true}\nDNSLAB_OK\n\n[stderr]\n"
+
+    }
+
+  ]
+
+}

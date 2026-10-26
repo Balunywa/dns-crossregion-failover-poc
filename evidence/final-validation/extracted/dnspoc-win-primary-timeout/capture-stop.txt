@@ -1,0 +1,6 @@
+Flushing logs...
+
+Merging metadata...
+
+Log file: C:\dnslab\primary-timeout\dns.etl (No events lost)
+

@@ -1,0 +1,29 @@
+{
+  "runId": "final-validation",
+  "subscription": "00000000-0000-0000-0000-000000000000",
+  "resourceGroup": "rg-dns-crossregion-failover-poc",
+  "storage": "example-evidence-storage",
+  "phases": [
+    "baseline",
+    "primary-timeout",
+    "fast-servfail-control",
+    "east-servfail",
+    "east-outbound-drop",
+    "no-east-peering",
+    "recovery"
+  ],
+  "startedUtc": "2026-10-26T14:02:24.517446+00:00",
+  "primary": "168.63.129.16",
+  "secondary": "10.30.0.4",
+  "eastAnswer": "192.0.2.10",
+  "westAnswer": "192.0.2.20",
+  "primaryOverrides": {
+    "fast-servfail-control": "10.10.2.4"
+  },
+  "publication": {
+    "accountIdentifiersRedacted": true,
+    "packetFilter": "Only DNS messages for lab.failover.test; link-layer packets otherwise unchanged",
+    "rawArchivesAndETLOmitted": true,
+    "note": "This is a public-safe copy, not the byte-identical private archive. Metrics can be recomputed from included filtered captures."
+  }
+}

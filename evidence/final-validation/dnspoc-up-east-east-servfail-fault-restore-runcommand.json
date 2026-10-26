@@ -1,0 +1,19 @@
+{
+
+  "value": [
+
+    {
+
+      "code": "ProvisioningState/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": "Enable succeeded: \n[stdout]\nChain INPUT (policy ACCEPT 3342 packets, 1042K bytes)\n pkts bytes target     prot opt in     out     source               destination         \nChain INPUT (policy ACCEPT 3342 packets, 1042K bytes)\n pkts bytes target     prot opt in     out     source               destination         \nhealthy\nDNSLAB_OK\n\n[stderr]\n"
+
+    }
+
+  ]
+
+}

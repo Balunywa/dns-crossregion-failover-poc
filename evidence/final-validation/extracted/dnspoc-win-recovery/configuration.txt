@@ -1,0 +1,336 @@
+
+
+
+
+Address                    : {168.63.129.16, 10.30.0.4}
+
+Caption                    : 
+
+Description                : 
+
+ElementName                : Ethernet 2
+
+InstanceID                 : 
+
+CommunicationStatus        : 
+
+DetailedStatus             : 
+
+HealthState                : 
+
+InstallDate                : 
+
+Name                       : 5
+
+OperatingStatus            : 
+
+OperationalStatus          : 
+
+PrimaryStatus              : 
+
+Status                     : 
+
+StatusDescriptions         : 
+
+AvailableRequestedStates   : 
+
+EnabledDefault             : 2
+
+EnabledState               : 5
+
+OtherEnabledState          : 
+
+RequestedState             : 12
+
+TimeOfLastStateChange      : 
+
+TransitioningToState       : 12
+
+CreationClassName          : 
+
+SystemCreationClassName    : 
+
+SystemName                 : 2
+
+AccessContext              : 0
+
+AccessInfo                 : 
+
+InfoFormat                 : 
+
+OtherAccessContext         : 
+
+OtherInfoFormatDescription : 
+
+AddressFamily              : 2
+
+InterfaceAlias             : Ethernet 2
+
+InterfaceIndex             : 5
+
+ServerAddresses            : {168.63.129.16, 10.30.0.4}
+
+PSComputerName             : 
+
+CimClass                   : ROOT/StandardCimv2:MSFT_DNSClientServerAddress
+
+CimInstanceProperties      : {Caption, Description, ElementName, InstanceID...}
+
+CimSystemProperties        : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+Address                    : {}
+
+Caption                    : 
+
+Description                : 
+
+ElementName                : Ethernet 2
+
+InstanceID                 : 
+
+CommunicationStatus        : 
+
+DetailedStatus             : 
+
+HealthState                : 
+
+InstallDate                : 
+
+Name                       : 5
+
+OperatingStatus            : 
+
+OperationalStatus          : 
+
+PrimaryStatus              : 
+
+Status                     : 
+
+StatusDescriptions         : 
+
+AvailableRequestedStates   : 
+
+EnabledDefault             : 2
+
+EnabledState               : 5
+
+OtherEnabledState          : 
+
+RequestedState             : 12
+
+TimeOfLastStateChange      : 
+
+TransitioningToState       : 12
+
+CreationClassName          : 
+
+SystemCreationClassName    : 
+
+SystemName                 : 23
+
+AccessContext              : 0
+
+AccessInfo                 : 
+
+InfoFormat                 : 
+
+OtherAccessContext         : 
+
+OtherInfoFormatDescription : 
+
+AddressFamily              : 23
+
+InterfaceAlias             : Ethernet 2
+
+InterfaceIndex             : 5
+
+ServerAddresses            : {}
+
+PSComputerName             : 
+
+CimClass                   : ROOT/StandardCimv2:MSFT_DNSClientServerAddress
+
+CimInstanceProperties      : {Caption, Description, ElementName, InstanceID...}
+
+CimSystemProperties        : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+Address                    : {}
+
+Caption                    : 
+
+Description                : 
+
+ElementName                : Loopback Pseudo-Interface 1
+
+InstanceID                 : 
+
+CommunicationStatus        : 
+
+DetailedStatus             : 
+
+HealthState                : 
+
+InstallDate                : 
+
+Name                       : 1
+
+OperatingStatus            : 
+
+OperationalStatus          : 
+
+PrimaryStatus              : 
+
+Status                     : 
+
+StatusDescriptions         : 
+
+AvailableRequestedStates   : 
+
+EnabledDefault             : 2
+
+EnabledState               : 5
+
+OtherEnabledState          : 
+
+RequestedState             : 12
+
+TimeOfLastStateChange      : 
+
+TransitioningToState       : 12
+
+CreationClassName          : 
+
+SystemCreationClassName    : 
+
+SystemName                 : 2
+
+AccessContext              : 0
+
+AccessInfo                 : 
+
+InfoFormat                 : 
+
+OtherAccessContext         : 
+
+OtherInfoFormatDescription : 
+
+AddressFamily              : 2
+
+InterfaceAlias             : Loopback Pseudo-Interface 1
+
+InterfaceIndex             : 1
+
+ServerAddresses            : {}
+
+PSComputerName             : 
+
+CimClass                   : ROOT/StandardCimv2:MSFT_DNSClientServerAddress
+
+CimInstanceProperties      : {Caption, Description, ElementName, InstanceID...}
+
+CimSystemProperties        : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+Address                    : {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+
+Caption                    : 
+
+Description                : 
+
+ElementName                : Loopback Pseudo-Interface 1
+
+InstanceID                 : 
+
+CommunicationStatus        : 
+
+DetailedStatus             : 
+
+HealthState                : 
+
+InstallDate                : 
+
+Name                       : 1
+
+OperatingStatus            : 
+
+OperationalStatus          : 
+
+PrimaryStatus              : 
+
+Status                     : 
+
+StatusDescriptions         : 
+
+AvailableRequestedStates   : 
+
+EnabledDefault             : 2
+
+EnabledState               : 5
+
+OtherEnabledState          : 
+
+RequestedState             : 12
+
+TimeOfLastStateChange      : 
+
+TransitioningToState       : 12
+
+CreationClassName          : 
+
+SystemCreationClassName    : 
+
+SystemName                 : 23
+
+AccessContext              : 0
+
+AccessInfo                 : 
+
+InfoFormat                 : 
+
+OtherAccessContext         : 
+
+OtherInfoFormatDescription : 
+
+AddressFamily              : 23
+
+InterfaceAlias             : Loopback Pseudo-Interface 1
+
+InterfaceIndex             : 1
+
+ServerAddresses            : {fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3}
+
+PSComputerName             : 
+
+CimClass                   : ROOT/StandardCimv2:MSFT_DNSClientServerAddress
+
+CimInstanceProperties      : {Caption, Description, ElementName, InstanceID...}
+
+CimSystemProperties        : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+
+
+
+
+
+
+
+
+Caption     : Microsoft Windows Server 2022 Datacenter Azure Edition
+
+Version     : 10.0.20348
+
+BuildNumber : 20348
+
+
+
+
+
+
+

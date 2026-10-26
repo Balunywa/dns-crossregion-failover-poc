@@ -1,0 +1,19 @@
+{
+
+  "value": [
+
+    {
+
+      "code": "ProvisioningState/succeeded",
+
+      "displayStatus": "Provisioning succeeded",
+
+      "level": "Info",
+
+      "message": "Enable succeeded: \n[stdout]\n{\"phase\": \"east-servfail\", \"evidence\": \"/var/lib/dns-lab/east-servfail\", \"complete\": true}\nDNSLAB_OK\n\n[stderr]\n"
+
+    }
+
+  ]
+
+}

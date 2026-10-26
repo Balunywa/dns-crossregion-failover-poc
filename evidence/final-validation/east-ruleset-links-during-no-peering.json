@@ -1,0 +1,79 @@
+{
+
+  "value": [
+
+    {
+
+      "etag": "\"2a048697-0000-0100-0000-6adf57360000\"",
+
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-dns-crossregion-failover-poc/providers/Microsoft.Network/dnsForwardingRulesets/dnspoc-east-ruleset/virtualNetworkLinks/east-spoke",
+
+      "name": "east-spoke",
+
+      "properties": {
+
+        "provisioningState": "Succeeded",
+
+        "virtualNetwork": {
+
+          "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-dns-crossregion-failover-poc/providers/Microsoft.Network/virtualNetworks/dnspoc-east-spoke"
+
+        }
+
+      },
+
+      "systemData": {
+
+        "createdAt": "2026-10-26T13:30:54.550171Z",
+
+        "createdByType": "User",
+
+        "lastModifiedAt": "2026-10-26T13:35:44.5646208Z",
+
+        "lastModifiedByType": "User"
+
+      },
+
+      "type": "Microsoft.Network/dnsForwardingRulesets/virtualNetworkLinks"
+
+    },
+
+    {
+
+      "etag": "\"2a040a93-0000-0100-0000-6adf57180000\"",
+
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-dns-crossregion-failover-poc/providers/Microsoft.Network/dnsForwardingRulesets/dnspoc-east-ruleset/virtualNetworkLinks/hub",
+
+      "name": "hub",
+
+      "properties": {
+
+        "provisioningState": "Succeeded",
+
+        "virtualNetwork": {
+
+          "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-dns-crossregion-failover-poc/providers/Microsoft.Network/virtualNetworks/dnspoc-east-hub"
+
+        }
+
+      },
+
+      "systemData": {
+
+        "createdAt": "2026-10-26T13:30:32.2074176Z",
+
+        "createdByType": "User",
+
+        "lastModifiedAt": "2026-10-26T13:35:15.7000597Z",
+
+        "lastModifiedByType": "User"
+
+      },
+
+      "type": "Microsoft.Network/dnsForwardingRulesets/virtualNetworkLinks"
+
+    }
+
+  ]
+
+}
