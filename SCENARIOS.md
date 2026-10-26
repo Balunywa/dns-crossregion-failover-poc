@@ -135,25 +135,8 @@ connected and healthy.
 [Editable draw.io: select TC-01](./docs/diagrams/dns-failover-scenarios.drawio)
 
 The Azure-style drawing above shows the deployed network boundaries and exact
-fault location. The simplified flow below follows the same DNS question.
-
-```mermaid
-flowchart LR
-    C["East US workload VM<br/>Windows or Ubuntu"]
-    F["Fault on workload firewall<br/>Drop DNS to 168.63.129.16"]
-    A["Azure DNS primary<br/>168.63.129.16"]
-    E["East ruleset -> East outbound<br/>-> East upstream 10.10.2.4"]
-    W["West inbound<br/>10.30.0.4"]
-    R["West ruleset<br/>-> West outbound"]
-    U["West upstream<br/>10.30.2.4<br/>Answer: 192.0.2.20"]
-    C -->|"First-choice DNS request"| F
-    F -.->|"Cannot reach primary DNS"| A
-    A --> E
-    C -->|"After OS retries<br/>direct global peering"| W
-    W --> R --> U
-    style F fill:#fff1f0,stroke:#c62828
-    style U fill:#e8f5e9,stroke:#2e7d32
-```
+fault location. The red cross marks blocked primary DNS traffic; the green
+route is the successful backup question through West.
 
 ### What we did
 
@@ -209,23 +192,7 @@ ruleset and upstream, so it does not depend on that broken East path.
 [Editable draw.io: select TC-02](./docs/diagrams/dns-failover-scenarios.drawio)
 
 The red cross marks the upstream fault, not a block at the client or Azure DNS.
-The green route is the independent West path used by the clients. Variants A
-and B are separate tests; the simplified flow below applies to either variant.
-
-```mermaid
-flowchart LR
-    C["East US workload VM<br/>Windows or Ubuntu"]
-    A["Azure DNS primary<br/>168.63.129.16<br/>Still reachable"]
-    R["East forwarding ruleset"]
-    O["East outbound<br/>10.10.1.0/28"]
-    F["East upstream 10.10.2.4<br/>Variant A: firewall drops DNS<br/>OR Variant B: returns SERVFAIL"]
-    W["West inbound 10.30.0.4<br/>Direct global peering"]
-    P["West ruleset -> West outbound<br/>-> West upstream 10.30.2.4<br/>Answer: 192.0.2.20"]
-    C --> A --> R --> O --> F
-    C -->|"If the client selects backup"| W --> P
-    style F fill:#fff3e0,stroke:#ef6c00
-    style P fill:#e8f5e9,stroke:#2e7d32
-```
+The green route is the independent West path used by the clients.
 
 There were **two separate variants**, not two faults applied together:
 
@@ -317,26 +284,6 @@ hub, so their own network path is unchanged. West peering also remains present.
 The red cross is only on the grey East peering relationship. The purple service
 link and blue primary DNS path remain intact; the orange West path is available
 but not needed for the measured native lookups.
-
-```mermaid
-flowchart TB
-    C["East workload VNet<br/>Windows and Ubuntu"]
-    A["Azure DNS<br/>168.63.129.16"]
-    L["East ruleset link<br/>Still attached to workload VNet"]
-    O["East outbound endpoint<br/>Inside East hub"]
-    U["East upstream 10.10.2.4<br/>Inside SAME East hub<br/>Answer: 192.0.2.10"]
-    X["REMOVED: East spoke/hub peering<br/>Both directions"]
-    I["East inbound 10.10.0.4<br/>Direct diagnostic now times out"]
-    W["West inbound 10.30.0.4<br/>Backup peering remains available"]
-    C -->|"Normal primary query"| A
-    A -.->|"Service association, not a peering route"| L
-    L --> O --> U
-    C -.->|"Direct East network path broken"| X
-    X -.-> I
-    C -->|"Separate backup path intact<br/>Not needed for measured native queries"| W
-    style X fill:#fff1f0,stroke:#c62828
-    style U fill:#e8f5e9,stroke:#2e7d32
-```
 
 ### What we did
 
