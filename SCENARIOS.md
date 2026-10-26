@@ -129,6 +129,14 @@ The normal East components remain deployed. The break is **on each workload VM**
 before its DNS packets can reach the Azure DNS address. The West path stays
 connected and healthy.
 
+![TC-01 architecture: client blocks primary DNS and uses the independent West resolver](./docs/diagrams/tc-01-primary-timeout.png)
+
+[Full-size SVG](./docs/diagrams/tc-01-primary-timeout.svg) |
+[Editable draw.io: select TC-01](./docs/diagrams/dns-failover-scenarios.drawio)
+
+The Azure-style drawing above shows the deployed network boundaries and exact
+fault location. The simplified flow below follows the same DNS question.
+
 ```mermaid
 flowchart LR
     C["East US workload VM<br/>Windows or Ubuntu"]
@@ -194,6 +202,15 @@ path, or does the workload use West? Does a DNS failure response change that?**
 Unlike TC-01, the workload can send DNS questions to `168.63.129.16`. The fault is
 farther along the **East outbound-to-upstream path**. West has its own resolver,
 ruleset and upstream, so it does not depend on that broken East path.
+
+![TC-02 architecture: Azure DNS remains reachable while East forwarding fails and clients use West](./docs/diagrams/tc-02-forwarding-failure.png)
+
+[Full-size SVG](./docs/diagrams/tc-02-forwarding-failure.svg) |
+[Editable draw.io: select TC-02](./docs/diagrams/dns-failover-scenarios.drawio)
+
+The red cross marks the upstream fault, not a block at the client or Azure DNS.
+The green route is the independent West path used by the clients. Variants A
+and B are separate tests; the simplified flow below applies to either variant.
 
 ```mermaid
 flowchart LR
@@ -291,6 +308,15 @@ We removed only the two directional peering resources connecting the East
 workload network to the East hub. We did **not** remove the ruleset link.
 The East outbound endpoint and East upstream remain together inside the East
 hub, so their own network path is unchanged. West peering also remains present.
+
+![TC-03 architecture: East spoke-to-hub peering is removed while Azure DNS and the linked East ruleset continue working](./docs/diagrams/tc-03-peering-removal.png)
+
+[Full-size SVG](./docs/diagrams/tc-03-peering-removal.svg) |
+[Editable draw.io: select TC-03](./docs/diagrams/dns-failover-scenarios.drawio)
+
+The red cross is only on the grey East peering relationship. The purple service
+link and blue primary DNS path remain intact; the orange West path is available
+but not needed for the measured native lookups.
 
 ```mermaid
 flowchart TB

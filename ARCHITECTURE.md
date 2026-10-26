@@ -1,6 +1,10 @@
 # End-to-end architecture and DNS flows
 
-![Regional architecture map](./architecture.svg)
+![Regional architecture map](./docs/diagrams/architecture-overview.png)
+
+[Full-size SVG](./docs/diagrams/architecture-overview.svg) |
+[Editable draw.io: overview and all three scenarios](./docs/diagrams/dns-failover-scenarios.drawio) |
+[Drawing guide](./docs/diagrams/README.md)
 
 For a first-time reader, start with [the plain-language scenario guide](./SCENARIOS.md).
 It explains the normal lookup, each fault's exact location, the resulting path,

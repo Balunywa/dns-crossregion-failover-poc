@@ -39,6 +39,12 @@ failover cannot masquerade as client-side cross-region failover.
 
 ## Topology
 
+![Azure DNS primary and West resolver backup architecture](./docs/diagrams/architecture-overview.png)
+
+[Open the full-size SVG](./docs/diagrams/architecture-overview.svg) |
+[Download the editable four-page draw.io file](./docs/diagrams/dns-failover-scenarios.drawio) |
+[All scenario drawings and regeneration instructions](./docs/diagrams/README.md)
+
 ```text
 East US spoke 10.20.0.0/16
   Windows 10.20.0.4 / Ubuntu 10.20.0.5
